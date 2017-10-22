@@ -15,6 +15,7 @@ def main(args=None):
     results = runner.run(unittest_suite)
     return results.wasSuccessful()
 
+
 if __name__ == '__main__':
     status = main(sys.argv[1:])
     sys.exit(int(not status))
